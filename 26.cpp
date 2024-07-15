@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
-
 int main() {
     int car_count = 0;
     int bike_count = 0;
     int rikshaw_count = 0;
     int choice;
-
     do {
         cout << "1. Park Car" << endl;
         cout << "2. Park Bike" << endl;
@@ -15,7 +13,6 @@ int main() {
         cout << "5. Do you want to go again" << endl;
         cout << "Enter your choice: ";
         cin >> choice;
-
         switch (choice) {
             case 1:
                 cout << "Car parked." << endl;
@@ -39,6 +36,5 @@ int main() {
     cout << "Cars: " << car_count << endl;
     cout << "Bikes: " << bike_count << endl;
     cout << "Rikshaws: " << rikshaw_count << endl;
-
     return 0;
 }
