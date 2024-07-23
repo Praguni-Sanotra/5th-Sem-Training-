@@ -148,8 +148,6 @@ public:
         cout << "Employee ID: " << id << endl;
     }
 };
-
-// ParkingLot class definition
 class ParkingLot {
 private:
     vector<Car> ParkedCars;
@@ -169,7 +167,6 @@ public:
             return false;
         }
     }
-
     bool parkVehicle(const Vehicle& vehicle) {
         if(ParkedVehicles.size() < Capacity) {
             ParkedVehicles.push_back(vehicle);
@@ -179,11 +176,9 @@ public:
             return false;
         }
     }
-
     void addEmployee(const Employee& employee) {
         Employees.push_back(employee);
     }
-
     void displayParkedCars() const {
         cout << "Parked Cars:\n" << endl;
         for(const auto& car : ParkedCars) {
@@ -223,7 +218,7 @@ int main() {
     myParkingLot.parkCar(car1);
     myParkingLot.parkCar(car2);
     myParkingLot.parkCar(car3);
-    myParkingLot.parkCar(car4);  // This will print "Parking lot is full!"
+    myParkingLot.parkCar(car4); 
 
     myParkingLot.parkVehicle(vehicle1);
     myParkingLot.parkVehicle(vehicle2);
